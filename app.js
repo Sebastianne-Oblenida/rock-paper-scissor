@@ -32,25 +32,17 @@ function playRound(playerSelection, computerSelection) {
         return `You lose! ${computerSelection[0].toUpperCase() + computerSelection.slice(1)} beats ${playerSelection[0].toUpperCase() + playerSelection.slice(1)}`
     }
 }
-
-// function game(playRound) {
-//     let playerScore = 0;
-//     let computerScore = 0;
-//     for (let i = 0; i < 5; i++) {
-//         playRound(playerSelection, computerSelection);
-//     }
-// }
+// play 5 round game
 function game() {
     for (let i = 0; i < 5; i++) {
         const computerSelection = getComputerChoice(choices);
         const playerSelection = prompt('Rock,Paper, or Scissor?').toLowerCase();
         console.log(playRound(playerSelection, computerSelection));
-        console.log(playerScore, computerScore)
     }
     if (playerScore > computerScore) {
         return 'You Win the game'
     }
     return 'You Lose the game'
 }
-// anounce winner
+
 console.log(game())
