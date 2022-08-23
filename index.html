@@ -1,13 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
     <title>Rock paper scissor</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    
+    <div id="scores">
+        <p>Player Score: <span id="playerScore">0</span></p>
+        <p>Computer Score: <span id="computerScore">0</span></p>
+    </div>
+    <div id="showHand">
+        <img id="player"src="" alt="">
+        <img id="computer"src="" alt="">
+    </div>
+    <p id="result">Best of 5</p>
+    <div>
+        <button class="rpsbtn" value="rock"><img src="./images/rock.png" alt=""></button>
+        <button class="rpsbtn" value="paper"><img src="./images/paper.png" alt=""></button>
+        <button class="rpsbtn" value="scissors"><img src="./images/scissors.png" alt=""></button>
+    </div>
+    <button id="reset">Play again?</button>
     <script src="app.js"></script>
 </body>
-</html>
