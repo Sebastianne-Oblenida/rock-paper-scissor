@@ -1,3 +1,3 @@
 # rock-papre-scissor
 
-Live site: https://sebastianne-oblenida.github.io/rock-paper-scissor/
+Live site: https://basteoble.github.io/rock-paper-scissor/
